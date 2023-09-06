@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  background: #000915;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/bckgrndindex.jpg), lightgray 50%/cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1024px;
+  border: 1px solid transparent;
+}
+
+.header {
+  margin-top: 217px;
+}
+
+.title {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 666px;
+}
+
+.description {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  /* 177.778% */
+  margin-top: 32px;
+  width: 465px;
+}
+.description_bold {
+  font-weight: 700;
+}
+
+.btn {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 234.063px;
+  height: 48.603px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #9C0332;
+  margin-top: 44px;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: #5b001b;
+}
+
+.game-box {
+  background: #000915;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 32px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.game__item {
+  grid-column: span 4;
+  max-width: 379px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-start;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  transition: all 0.3s;
+}
+.game__item:hover {
+  transform: scale(0.97);
+  box-shadow: 0px 0px 5px 7px #050050;
+}
+.game__item_first {
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/first.jpg), lightgray 50%/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.game__item_second {
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/second.jpg), lightgray 50%/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.game__item_third {
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/third.jpg), lightgray 50%/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.game__text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  /* 133.333% */
+}/*# sourceMappingURL=style.css.map */
