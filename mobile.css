@@ -29,14 +29,63 @@
   .btn {
     margin-top: 32px;
   }
+  .btn__box {
+    display: flex;
+    justify-content: center;
+  }
   .game-box {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
   }
   .game__item {
-    max-width: 343px;
+    width: 343px;
     height: 300px;
     flex-shrink: 0;
+  }
+  .seasons__box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 64px;
+    padding-top: 50px;
+    padding-bottom: 85px;
+  }
+  .seasons__title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .seasons__img {
+    display: none;
+  }
+  .seasons__img_mobile {
+    display: flex;
+    align-items: center;
+  }
+  .remember__box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 64px;
+    padding-top: 50px;
+    padding-bottom: 85px;
+  }
+  .remember__title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .remember__img {
+    display: none;
+  }
+  .remember__img_mobile {
+    display: flex;
+    align-items: center;
+  }
+  .riddles__box {
+    padding-top: 50px;
+    padding-bottom: 487px;
   }
 }/*# sourceMappingURL=mobile.css.map */
