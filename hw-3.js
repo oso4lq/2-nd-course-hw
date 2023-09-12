@@ -1,4 +1,3 @@
-
 //  1
 let pswd = 'notqwerty';
 let userpswd = prompt('Enter password');
@@ -9,8 +8,10 @@ if (userpswd === pswd) {
 };
 
 //  2
-let c = Number(prompt('Enter a number'));
-if (c > 0 && c < 10) {
+let c = prompt('Enter a number');
+if (isNaN(c) === true) {
+    alert('this is not a number')
+} else if (c > 0 && c < 10) {
     alert('correct')
 } else {
     alert('incorrect')
@@ -34,8 +35,10 @@ b=Number(b);
 alert(a + b);
 
 //  5
-let monthNumber = Number(prompt('Month number?'));
-
+let monthNumber = prompt('Month number?');
+if (isNaN(monthNumber) === true) {
+    alert('this is not a number');
+} else {
 switch(monthNumber) {
 
 case 1:
@@ -77,23 +80,57 @@ break;
 default: alert(`Month number ${monthNumber} does not exist`)
 break;
 };
+};
 
 //  7
-let number = Number(prompt('Enter a number'));
+let number = prompt('Enter a number');
 if (isNaN(number) === true) {
     alert('this is not a number');
-} else if (number == 1) {
-    alert('this number is odd');
-} else if ((number % 2) == 1) {
+} else if ((number % 2) === 1) {
     alert('this number is odd');
 } else {
     alert('this number is even');
 };
 
-//  8      NOT READY
+//  8
 
-let clientOS = 1;
+let clientOS;
 
+let userDeviceArray = [
+    {device: 'Android', platform: /Android/},
+    {device: 'iPhone', platform: /iPhone/},
+    {device: 'iPad', platform: /iPad/},
+    /*{device: 'Symbian', platform: /Symbian/},
+    {device: 'Windows Phone', platform: /Windows Phone/},
+    {device: 'Tablet OS', platform: /Tablet OS/},
+    {device: 'Linux', platform: /Linux/},
+
+    {device: 'Windows', platform: /Windows NT/},
+    {device: 'Macintosh', platform: /Macintosh/}*/
+];
+
+let platform = navigator.userAgent;
+
+function getPlatform() {
+    for (var i in userDeviceArray) {
+        if (userDeviceArray[i].platform.test(platform)) {
+            return userDeviceArray[i].device;
+        }
+    }
+    return 'Unknown platform!' + platform;
+}
+
+console.log(getPlatform());
+
+if (getPlatform() === 'Android') {
+    clientOS = 1;
+} else if (getPlatform() === 'iPhone' || getPlatform() === 'iPad') {
+    clientOS = 0;
+} else if (getPlatform() === 'Windows') {
+    clientOS = 2;
+} else {
+    clientOS = undefined;
+};
 
 switch (clientOS) {
     case 0:
@@ -102,20 +139,10 @@ switch (clientOS) {
     case 1:
         console.log('Install the Android version of the application using the link');
     break;
+    case 2:
+        console.log('ekekekkekek');
+    break;
     default: console.log('Stay on our website');
 }
 
-function getMobileOperatingSystem() {
-    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-    if (/android/i.test(userAgent)) {
-        console.log(object); "Android";
-    }
-
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        return "iOS";
-    }
-
-    return "unknown";
-}
+//  9
