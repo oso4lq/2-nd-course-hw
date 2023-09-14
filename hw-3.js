@@ -1,3 +1,4 @@
+
 //  1
 let pswd = 'notqwerty';
 let userpswd = prompt('Enter password');
@@ -35,7 +36,7 @@ b=Number(b);
 alert(a + b);
 
 //  5
-let monthNumber = prompt('Month number?');
+let monthNumber = Number(prompt('Month number?'));
 if (isNaN(monthNumber) === true) {
     alert('this is not a number');
 } else {
@@ -83,7 +84,7 @@ break;
 };
 
 //  7
-let number = prompt('Enter a number');
+let number = Number(prompt('Enter a number'));
 if (isNaN(number) === true) {
     alert('this is not a number');
 } else if ((number % 2) === 1) {
@@ -94,19 +95,41 @@ if (isNaN(number) === true) {
 
 //  8
 
+let osName = prompt('iOS or Android?');
 let clientOS;
+osName = osName.toLowerCase();
 
+if (osName === 'ios') {
+    clientOS = 0;
+} else if (osName === 'android') {
+    clientOS = 1;
+} else {
+    clientOS = undefined;
+};
+
+switch (clientOS) {
+    case 0:
+        console.log('Install the iOS version of the application using the link');
+    break;
+    case 1:
+        console.log('Install the Android version of the application using the link');
+    break;
+    default: 
+    console.log('Stay on our website');
+};
+
+/*
 let userDeviceArray = [
     {device: 'Android', platform: /Android/},
     {device: 'iPhone', platform: /iPhone/},
     {device: 'iPad', platform: /iPad/},
-    /*{device: 'Symbian', platform: /Symbian/},
+    {device: 'Symbian', platform: /Symbian/},
     {device: 'Windows Phone', platform: /Windows Phone/},
     {device: 'Tablet OS', platform: /Tablet OS/},
     {device: 'Linux', platform: /Linux/},
 
     {device: 'Windows', platform: /Windows NT/},
-    {device: 'Macintosh', platform: /Macintosh/}*/
+    {device: 'Macintosh', platform: /Macintosh/}
 ];
 
 let platform = navigator.userAgent;
@@ -143,6 +166,37 @@ switch (clientOS) {
         console.log('ekekekkekek');
     break;
     default: console.log('Stay on our website');
-}
+}*/
 
 //  9
+let osName9 = prompt('iOS or Android?');
+let clientOS9 = undefined;
+osName9 = osName9.toLowerCase();
+let clientDeviceYear = prompt('Your device manufacture year?');
+
+if (osName === 'ios') {
+    clientOS9 = 0;
+} else if (osName === 'android') {
+    clientOS9 = 1;
+} else {
+    clientOS9 = undefined;
+};
+
+switch (clientOS9) {
+    case 0:
+        if (clientDeviceYear < 2015) {
+            console.log('Install the iOS lite version of the application using the link');
+        } else {
+            console.log('Install the iOS version of the application using the link');
+        }
+    break;
+    case 1:
+        if (clientDeviceYear < 2015) {
+            console.log('Install the Android lite version of the application using the link');
+        } else {
+            console.log('Install the Android version of the application using the link');
+        }
+    break;
+    default: 
+    console.log('Stay on our website');
+};
