@@ -174,9 +174,9 @@ let clientOS9 = undefined;
 osName9 = osName9.toLowerCase();
 let clientDeviceYear = prompt('Your device manufacture year?');
 
-if (osName === 'ios') {
+if (osName9 === 'ios') {
     clientOS9 = 0;
-} else if (osName === 'android') {
+} else if (osName9 === 'android') {
     clientOS9 = 1;
 } else {
     clientOS9 = undefined;
