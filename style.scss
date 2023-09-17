@@ -17,6 +17,8 @@ a {
 
 }
 
+//  TOP
+
 .top {
     background: #000915;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%), url(img/bckgrndindex.jpg), lightgray 50% / cover no-repeat;
@@ -39,7 +41,7 @@ a {
     font-weight: 700;
     line-height: normal;
 
-    width: 666px;
+    max-width: 666px;
 }
 
 .description {
@@ -52,10 +54,23 @@ a {
     /* 177.778% */
 
     margin-top: 32px;
-    width: 465px;
+    max-width: 465px;
 
     &_bold {
         font-weight: 700;
+    }
+
+    &_seasons {
+        max-width: 535px;
+    }
+
+    &_remember {
+        max-width: 588px;
+    }
+
+    &_riddles {
+        max-width: 1200px;
+        text-align: center;
     }
 }
 
@@ -77,10 +92,18 @@ a {
 
     transition: all 0.3s;
 
+
+
     &:hover {
-        background: #5b001b;
+        background: #EB443F;
+    }
+
+    &_seasons {
+        margin-top: 32px;
     }
 }
+
+//  GAMES
 
 .game-box {
     background: #000915;
@@ -113,8 +136,8 @@ a {
         transition: all 0.3s;
 
         &:hover {
-            transform: scale(0.97);
-            box-shadow: 0px 0px 5px 7px #050050;
+            transform: scale(0.98);
+            border: 3px solid #44D2FF;
         }
 
         &_first {
@@ -147,6 +170,123 @@ a {
         font-weight: 600;
         line-height: 32px;
         /* 133.333% */
+    }
+}
+
+//  SEASONS
+
+.seasons {
+    background: #000915;
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+
+        padding-top: 234px;
+        padding-bottom: 234px;
+    }
+
+    &__textbox {
+        grid-column: span 6;
+    }
+
+    &__title {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__img {
+        grid-column: span 6;
+        display: flex;
+        justify-content: end;
+
+        &_mobile {
+            display: none;
+        }
+    }
+}
+
+//  REMEMBER
+
+.remember {
+    background: #000915;
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+
+        padding-top: 239px;
+        padding-bottom: 239px;
+    }
+
+    &__textbox {
+        grid-column: span 6;
+    }
+
+    &__title {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__img {
+        grid-column: span 6;
+        display: flex;
+        justify-content: start;
+
+        &_mobile {
+            display: none;
+        }
+    }
+}
+
+//  RIDDLES
+
+.riddles {
+    background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%), url(img/bckgrnddown.jpg), lightgray 50% / cover no-repeat;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+
+        padding-top: 239px;
+        padding-bottom: 239px;
+        gap: 32px
+    }
+
+}
+
+//  FOOTER
+
+.footer {
+    background: #000915;
+
+    &__text {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+        text-align: center
     }
 }
 

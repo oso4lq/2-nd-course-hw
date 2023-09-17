@@ -1,5 +1,7 @@
 @media (max-width: 768px) {
 
+    // TOP
+
     .top {
         display: flex;
         flex-direction: column;
@@ -36,17 +38,90 @@
 
     .btn {
         margin-top: 32px;
+
+        &__box {
+            display: flex;
+            justify-content: center;
+        }
     }
+
+    //  GAME
 
     .game-box {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        align-items: center;
     }
 
     .game__item {
-        max-width: 343px;
+        width: 343px;
         height: 300px;
         flex-shrink: 0;
+    }
+
+    //  SEASONS
+
+    .seasons {
+        &__box {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 64px;
+            padding-top: 50px;
+            padding-bottom: 85px;
+        }
+
+        &__title {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        &__img {
+            display: none;
+
+            &_mobile {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    //  REMEMBER
+
+    .remember {
+        &__box {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 64px;
+            padding-top: 50px;
+            padding-bottom: 85px;
+        }
+
+        &__title {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        &__img {
+            display: none;
+
+            &_mobile {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    //  RIDDLES
+
+    .riddles {
+        &__box {
+            padding-top: 50px;
+            padding-bottom: 487px;
+        }
     }
 }
