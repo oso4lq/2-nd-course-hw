@@ -34,9 +34,9 @@ let obj = {
     Petya: 400
 };
 
-for (key in obj) {
-    if (obj[key]) {
-        console.log(`${key} has a salary of ${obj[key]} dollars`);
+for (let name in obj) {
+    if (obj[name]) {
+        console.log(`${name} has a salary of ${obj[name]} dollars`);
     };
 };
 
@@ -61,7 +61,7 @@ if (isNaN(firstFridayDate) === true) {
     alert('The first Friday of the month cannot have a date greater than 7.');
 } else {
 
-for (; firstFridayDate < 31; firstFridayDate = firstFridayDate + 7) {
+for (; firstFridayDate <= 31; firstFridayDate = firstFridayDate + 7) {
     
     if (firstFridayDate === 1) {
         console.log(`Today is Friday, ${firstFridayDate}st. You need to prepare a report.`);
