@@ -38,7 +38,7 @@ console.log(square2.getRectanglePerimeter());
 
 
 //  1
-const comparator = (a, b) => {
+const comparatorLess = (a, b) => {
     if ((a - b) < 0) {
         return a;
     } else {
@@ -46,83 +46,74 @@ const comparator = (a, b) => {
     }
 }
 
-let a = prompt('Enter the 1st number');
-let b = prompt('Enter the 2nd number');
-
-console.log(comparator(a, b));
+console.log(comparatorLess(8, 4));
 
 //  2
-const oddEven = () => {
-    let number = Number(prompt('Enter a number'));
+const oddEven = (number) => {
     if (isNaN(number) === true) {
-        alert('This value is not a number');
+        console.log('This value is not a number');
     } else if ((number % 2) === 1) {
-        alert('This number is odd');
+        console.log('This number is odd');
     } else {
-        alert('This number is even');
+        console.log('This number is even');
     };
 }
 
-oddEven();
+oddEven(222);
 
 //  3.1
-const square31 = () => {
-    let c = prompt('Enter a number');
-    console.log(c**2);
+const square31 = (c) => {
+    console.log(c ** 2);
 };
-square31();
+square31(12);
 
 // 3.2
 
-const square32 = () => {
-    let d = prompt('Enter a number');
+const square32 = (d) => {
     return d ** 2;
 };
-console.log(square32());
+console.log(square32(14));
 
 //  4
-const checkAge = () => {
-    let age = prompt('Enter your age');
-    if (age < 0) {
-        alert('Incorrect value');
+const checkAge = (age) => {
+    if (isNaN(age) === true) {
+        console.log('This value is not a number');
+    } else if (age < 0) {
+        console.log('Incorrect value');
     } else if (age >= 0 && age <= 12) {
-        alert('Hi, mate!');
+        console.log('Hi, mate!');
     } else {
-        alert('Welcome!');
+        console.log('Welcome!');
     };
 };
-checkAge();
+checkAge(22);
 
 //  5
-const checkIsTwoNaNs = (params) => {
-    let e = Number(prompt('Enter the 1st number'));
-    let f = Number(prompt('Enter the 2nd number'));
-
+const checkIsTwoNaNs = (e, f) => {
     if (isNaN(e) === true || isNaN(f) === true) {
-        alert('One or both values are NaN');
+        return 'One or both values are NaN';
     } else {
-            return e * f;
-        };
+        return e * f;
+    };
 };
-console.log(checkIsTwoNaNs());
+console.log(checkIsTwoNaNs(1, 'ssd'));
 
 //  6
-const cube = () => {
-    let g = Number(prompt('Enter a number'));
+const cube = (g) => {
     if (isNaN(g) === true) {
-        alert('This value is not a number');
+        console.log('This value is not a number');
     } else {
-            console.log(g ** 3);
-        };
+        console.log(g ** 3);
+    };
 };
-cube();
+cube(12);
 
 //  7
 function getArea() {
-    return Math.PI * this.radius ** 2;
+    return Math.round(Math.PI * this.radius ** 2);
 };
 function getPerimeter() {
-    return Math.PI * this.radius * 2;
+    return Math.round(Math.PI * this.radius * 2);
 };
 
 let circle1 = {
