@@ -75,8 +75,9 @@ const square32 = (d) => {
 console.log(square32(14));
 
 //  4
-const checkAge = (age) => {
-    if (isNaN(age) === true) {
+const checkAge = () => {
+    let age = prompt('How old are you?')
+    if (isNaN(age) === true || age === null) {
         console.log('This value is not a number');
     } else if (age < 0) {
         console.log('Incorrect value');
@@ -86,7 +87,7 @@ const checkAge = (age) => {
         console.log('Welcome!');
     };
 };
-checkAge(22);
+checkAge();
 
 //  5
 const checkIsTwoNaNs = (e, f) => {
@@ -99,14 +100,17 @@ const checkIsTwoNaNs = (e, f) => {
 console.log(checkIsTwoNaNs(1, 'ssd'));
 
 //  6
-const cube = (g) => {
-    if (isNaN(g) === true) {
-        console.log('This value is not a number');
+const cube = () => {
+    let n = prompt('Enter a number')
+    let result;
+    if (isNaN(n) === true || n === null) {
+        return 'This value is not a number';
     } else {
-        console.log(g ** 3);
+        result = n ** 3;
+        return `n cubed is equal to ${result}`;
     };
 };
-cube(12);
+console.log(cube());
 
 //  7
 function getArea() {
