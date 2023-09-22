@@ -23,7 +23,7 @@
             <p class="description">Вам предстоит пройти несколько увлекательных игр. Если готов, нажимай <b
                     class="description_bold">поехали</b> и <b class="description_bold">приступай</b></p>
             <div class="btn__box">
-                <a href="#"><button class="btn">Поехали!</button></a>
+                <a href="#game-box"><button class="btn">Поехали!</button></a>
             </div>
         </header>
 
@@ -31,15 +31,15 @@
 
 
 
-    <section class="game-box center">
+    <section class="game-box center" id="game-box">
 
-        <a class="game__item game__item_first" href="#">
+        <a class="game__item game__item_first" href="#seasons">
             <p class="game__text">Игра 1</p>
         </a>
-        <a class="game__item game__item_second" href="#">
+        <a class="game__item game__item_second" href="#remember">
             <p class="game__text">Игра 2</p>
         </a>
-        <a class="game__item game__item_third" href="#">
+        <a class="game__item game__item_third" href="#riddles">
             <p class="game__text">Игра 3</p>
         </a>
 
@@ -47,14 +47,16 @@
 
 
 
-    <section class="seasons center">
+    <section class="seasons center" id="seasons">
         <div class="seasons__box">
             <div class="seasons__textbox">
                 <h2 class="seasons__title">Времена года</h2>
                 <p class="description description_seasons">Вам предстоит пройти несколько увлекательных игр. Если готов,
                     нажимай <b class="description_bold">поехали</b> и <b class="description_bold">приступай</b></p>
                 <div class="btn__box">
-                    <a href="#"><button class="btn btn_seasons">Поехали!</button></a>
+                    <a href="#"><button onclick="gameSeasons()" class="btn btn_seasons">Поехали!</button>
+                    <script src="game_seasons.js"></script>
+                    </a>
                 </div>
             </div>
             <div class="seasons__img">
@@ -516,7 +518,7 @@
         </div>
     </section>
 
-    <section class="remember center">
+    <section class="remember center" id="remember">
         <div class="remember__box">
             <div class="remember__img">
                 <svg width="481" height="322" viewBox="0 0 481 322" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1085,7 +1087,7 @@
         </div>
     </section>
 
-    <section class="riddles">
+    <section class="riddles" id="riddles">
         <div class="riddles__box">
             <h2 class="seasons__title">Игра в загадки</h2>
             <p class="description description_riddles">Компьютер загадывает загадку, вам необходимо ее угадать, если вы
