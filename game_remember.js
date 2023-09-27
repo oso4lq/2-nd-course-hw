@@ -2,7 +2,7 @@ function gameRemember() {
 
     let array = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 
-    array.sort();
+    array.sort(() => Math.random() - 0.5);
     alert(array.join(', '));
     elementFirst = prompt('Чему равнялся первый элемент массива?');
     elementLast = prompt('Чему равнялся последний элемент массива?');
