@@ -107,7 +107,7 @@ const cube = () => {
         return 'This value is not a number';
     } else {
         result = n ** 3;
-        return `n cubed is equal to ${result}`;
+        return `${n} cubed is equal to ${result}`;
     };
 };
 console.log(cube());
