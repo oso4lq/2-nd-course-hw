@@ -40,7 +40,8 @@
     align-items: center;
   }
   .game__item {
-    width: 343px;
+    min-width: 311px;
+    max-width: 343px;
     height: 300px;
     flex-shrink: 0;
   }

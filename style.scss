@@ -204,6 +204,8 @@ a {
         grid-column: span 6;
         display: flex;
         justify-content: end;
+        flex-direction: column;
+        max-width: 485px;
 
         &_mobile {
             display: none;
@@ -242,6 +244,8 @@ a {
         grid-column: span 6;
         display: flex;
         justify-content: start;
+        flex-direction: column;
+        max-width: 485px;
 
         &_mobile {
             display: none;

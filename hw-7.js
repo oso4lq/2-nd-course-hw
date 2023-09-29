@@ -1,4 +1,3 @@
-/*
 //  1
 console.log('Task 1');
 //
@@ -139,4 +138,3 @@ if (seconds < 10) {
 
 console.log(`Дата: ${fullDate}`);
 console.log(`Время: ${hours}:${minutes}:${seconds}`);
-*/
