@@ -33,10 +33,11 @@ let arr4 = [];
 let arrItem = [];
 for (let index = 0; index < 3; index++) {
     arrItem.push(1);
+    for (let index = 0; index < 1; index++) {
+        arr4.push(arrItem);
+    };
 };
-for (let index = 0; index < 3; index++) {
-    arr4.push(arrItem);
-};
+
 console.log(arr4);
 
 
@@ -177,9 +178,8 @@ console.log(getLengthWords(inputWords));
 //  13
 console.log('Task 13');
 //
-let arrayNegative = [];
-
 function filterPositive(array) {
+    let arrayNegative = [];
     array.forEach(element => {
         if (element < 0) {
             arrayNegative.push(element);
@@ -191,7 +191,6 @@ function filterPositive(array) {
 
 console.log(filterPositive([-1, 0, 5, -10, 56]));
 // => [-1, -10]
-arrayNegative = [];
 console.log(filterPositive([-25, 25, 0, -1000, -2]));
 // => [-25, -1000, -2]
 

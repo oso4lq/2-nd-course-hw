@@ -166,6 +166,8 @@ a {
   grid-column: span 6;
   display: flex;
   justify-content: end;
+  flex-direction: column;
+  max-width: 485px;
 }
 .seasons__img_mobile {
   display: none;
@@ -196,6 +198,8 @@ a {
   grid-column: span 6;
   display: flex;
   justify-content: start;
+  flex-direction: column;
+  max-width: 485px;
 }
 .remember__img_mobile {
   display: none;
@@ -274,7 +278,8 @@ a {
     align-items: center;
   }
   .game__item {
-    width: 343px;
+    min-width: 311px;
+    max-width: 343px;
     height: 300px;
     flex-shrink: 0;
   }
