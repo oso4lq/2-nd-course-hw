@@ -1,0 +1,31 @@
+.color1 {
+    background-color: rgb(199, 80, 80);
+}
+.color2 {
+    background-color: rgb(91, 91, 249);
+}
+.color3 {
+    background-color: rgb(188, 70, 123);
+}
+.color4 {
+    background-color: rgb(70, 191, 70);
+}
+.color5 {
+    background-color: goldenrod;
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+}
+
+.task21 {
+    background-color: rgb(171, 194, 18);
+    display: flex;
+}
+.task22 {
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    display: flex;   
+}
